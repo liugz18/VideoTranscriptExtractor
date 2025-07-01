@@ -1,0 +1,36 @@
+# 核心依赖
+numpy>=1.21.0
+opencv-python>=4.5.0
+Pillow>=8.0.0
+
+# 音频处理
+librosa>=0.9.0
+soundfile>=0.10.0
+webrtcvad>=2.0.10
+
+# OCR处理
+easyocr>=1.6.0
+pytesseract>=0.3.8
+
+# ASR处理
+openai-whisper>=20231117
+torch>=1.9.0
+torchaudio>=0.9.0
+
+# 视频处理
+ffmpeg-python>=0.2.0
+
+# 文本处理
+difflib
+jieba>=0.42.1
+
+# 工具库
+tqdm>=4.62.0
+matplotlib>=3.5.0
+seaborn>=0.11.0
+
+# 开发依赖
+pytest>=6.0.0
+black>=21.0.0
+flake8>=3.9.0
+mypy>=0.910 
