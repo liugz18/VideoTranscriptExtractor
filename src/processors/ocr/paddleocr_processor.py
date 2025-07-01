@@ -32,11 +32,8 @@ class PaddleOCRProcessor(OCRProcessor):
         try:
             results = self.ocr.ocr(image)[0]
             ocr_results = []
-            for line in results:
-                # PaddleOCR返回格式：[ [ [x1, y1], [x2, y2], [x3, y3], [x4, y4] ], (text, confidence) ]
-                bbox = [coord for point in line[0] for coord in point]
-                text, confidence = line[1][0], float(line[1][1])
-                ocr_results.append(OCRResult(text=text, confidence=confidence, bbox=bbox))
+            for i in range(len(results['rec_texts'])):
+                ocr_results.append(OCRResult(results['rec_texts'][i], results['rec_scores'][i]))
             return ocr_results
         except Exception as e:
             self.logger.error(f"PaddleOCR识别时发生错误: {str(e)}")

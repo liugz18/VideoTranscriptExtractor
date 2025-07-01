@@ -27,6 +27,36 @@ result = extractor.extract("path/to/video.mp4")
 print(result.transcript)
 ```
 
+## 示例 Examples
+
+本项目提供了多个独立的功能调用示例，位于 `examples/` 目录下：
+
+### 1. OCR图片识别示例
+
+对一张图片进行OCR识别，打印所有检测到的文本：
+
+```bash
+python -m examples.ocr_example
+```
+
+### 2. VAD音频分段示例
+
+对一段音频文件进行VAD分段，打印所有检测到的语音区间：
+
+```bash
+python -m examples.vad_example
+```
+
+### 3. 视频VAD+OCR综合示例
+
+对一个视频文件，先提取音频并用VAD检测语音区间，再对每个区间的中点帧做OCR，打印每个区间的字幕内容：
+
+```bash
+python -m examples.video_vad_ocr_example
+```
+
+---
+
 ## 项目结构
 
 ```
