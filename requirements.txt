@@ -6,14 +6,17 @@ Pillow>=8.0.0
 # 音频处理
 librosa>=0.9.0
 soundfile>=0.10.0
-webrtcvad>=2.0.10
+# webrtcvad>=2.0.10
+silero-vad
 
 # OCR处理
-easyocr>=1.6.0
-pytesseract>=0.3.8
+# easyocr>=1.6.0
+# pytesseract>=0.3.8
+paddlepaddle
+paddleocr
 
 # ASR处理
-openai-whisper>=20231117
+# openai-whisper>=20231117
 torch>=1.9.0
 torchaudio>=0.9.0
 

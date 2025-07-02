@@ -38,6 +38,7 @@ class OpenCVVideoProcessor(VideoProcessor):
             }
             
             self.logger.info(f"成功加载视频: {video_path}")
+            self.logger.info(f"视频信息: {self.video_info}")
             return True
             
         except Exception as e:
