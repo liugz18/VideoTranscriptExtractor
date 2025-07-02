@@ -82,6 +82,94 @@ class TranscriptionResult:
     def transcript(self) -> str:
         """获取完整转录文本"""
         return self.full_text
+    
+    def save_to_file(self, file_path: str, format: str = "json") -> None:
+        """
+        将转录结果序列化并保存到文件
+        
+        Args:
+            file_path: 文件路径
+            format: 文件格式 ("json" 或 "txt")
+        """
+        import json
+        import os
+        
+        os.makedirs(os.path.dirname(file_path), exist_ok=True)
+        
+        if format.lower() == "json":
+            # 保存为JSON格式，包含完整信息
+            data = {
+                "segments": [
+                    {
+                        "start_time": seg.start_time,
+                        "end_time": seg.end_time,
+                        "text": seg.text,
+                        "source": seg.source,
+                        "confidence": seg.confidence
+                    }
+                    for seg in self.segments
+                ],
+                "full_text": self.full_text,
+                "duration": self.duration,
+                "metadata": self.metadata
+            }
+            
+            with open(file_path, 'w', encoding='utf-8') as f:
+                json.dump(data, f, ensure_ascii=False, indent=2)
+                
+        elif format.lower() == "txt":
+            # 保存为纯文本格式
+            with open(file_path, 'w', encoding='utf-8') as f:
+                f.write(f"# 转录结果\n")
+                f.write(f"# 总时长: {self.duration:.2f}秒\n")
+                f.write(f"# 片段数: {len(self.segments)}\n\n")
+                
+                for i, seg in enumerate(self.segments, 1):
+                    f.write(f"[{seg.start_time:.2f}s - {seg.end_time:.2f}s] ({seg.source})\n")
+                    f.write(f"{seg.text}\n\n")
+        else:
+            raise ValueError(f"不支持的格式: {format}")
+    
+    @classmethod
+    def load_from_file(cls, file_path: str) -> 'TranscriptionResult':
+        """
+        从文件反序列化转录结果
+        
+        Args:
+            file_path: 文件路径
+            
+        Returns:
+            TranscriptionResult: 转录结果对象
+        """
+        import json
+        import os
+        
+        if not os.path.exists(file_path):
+            raise FileNotFoundError(f"文件不存在: {file_path}")
+        
+        if file_path.lower().endswith('.json'):
+            with open(file_path, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+            
+            segments = [
+                TranscriptionSegment(
+                    start_time=seg["start_time"],
+                    end_time=seg["end_time"],
+                    text=seg["text"],
+                    source=seg["source"],
+                    confidence=seg["confidence"]
+                )
+                for seg in data["segments"]
+            ]
+            
+            return cls(
+                segments=segments,
+                full_text=data["full_text"],
+                duration=data["duration"],
+                metadata=data["metadata"]
+            )
+        else:
+            raise ValueError(f"不支持的文件格式: {file_path}")
 
 
 @dataclass

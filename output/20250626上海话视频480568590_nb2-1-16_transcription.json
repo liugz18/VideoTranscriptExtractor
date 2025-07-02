@@ -1,0 +1,180 @@
+{
+  "segments": [
+    {
+      "start_time": 0.1,
+      "end_time": 0.6,
+      "text": "徐祥Bit3Dn|老上海|兄弟啊",
+      "source": "ocr",
+      "confidence": 0.9431549906730652
+    },
+    {
+      "start_time": 0.7,
+      "end_time": 1.7,
+      "text": "徐祥Bit3|bilibil|老上海|欢迎你来上海",
+      "source": "ocr",
+      "confidence": 0.9298393279314041
+    },
+    {
+      "start_time": 1.8,
+      "end_time": 5.1,
+      "text": "北方帅哥|大哥|北方帅哥|听说你不会说普通话|北方帅哥|这不很标准吗",
+      "source": "ocr",
+      "confidence": 0.9964914421240488
+    },
+    {
+      "start_time": 5.2,
+      "end_time": 8.0,
+      "text": "徐祥Bit3 iiblli|老上海|徐祥Bit3|biibili|老上海|我讲发讲发|徐祥Bit3|bilibil|老上海|上海话就要出来的",
+      "source": "ocr",
+      "confidence": 0.9483569383621215
+    },
+    {
+      "start_time": 8.1,
+      "end_time": 10.1,
+      "text": "新上海人|大哥|新上海人|你放心讲",
+      "source": "ocr",
+      "confidence": 0.9952802658081055
+    },
+    {
+      "start_time": 10.3,
+      "end_time": 11.7,
+      "text": "徐祥Bit3|biibili|老上海|我这个人呢|徐祥Bit3|bilibill|老上海|很实惠的",
+      "source": "ocr",
+      "confidence": 0.9542246758937836
+    },
+    {
+      "start_time": 12.0,
+      "end_time": 13.2,
+      "text": "新上海人|大哥说他很务实|8|新上海人|大哥说他很务实",
+      "source": "ocr",
+      "confidence": 0.8129894360899925
+    },
+    {
+      "start_time": 13.4,
+      "end_time": 16.9,
+      "text": "徐祥Bit3|ilibil|老上海|说话从来不喜欢|GLT|徐祥Bit3|bilibili|老上海|说话从来不喜欢|GLT|正|徐祥Bit3|bilibili|老上海|做事情从来不喜欢|YHH|徐祥Bit3|bilibili|老上海|故事情从来不喜欢|YHH",
+      "source": "ocr",
+      "confidence": 0.9047342439492544
+    },
+    {
+      "start_time": 17.0,
+      "end_time": 19.6,
+      "text": "讲话不会惯浪头|上海人|新|新上海人|讲话不会掼浪头|新上海人|做事不会野花花",
+      "source": "ocr",
+      "confidence": 0.9741362503596714
+    },
+    {
+      "start_time": 19.8,
+      "end_time": 20.9,
+      "text": "北方帅哥|徐祥BIt3 bilibili|你说普通话好吗|北方帅哥|你祥Bitillibi|你说普通话好吗",
+      "source": "ocr",
+      "confidence": 0.9097409745057424
+    },
+    {
+      "start_time": 21.1,
+      "end_time": 22.1,
+      "text": "新上海人|我说普通话了呀",
+      "source": "ocr",
+      "confidence": 0.9931753575801849
+    },
+    {
+      "start_time": 24.0,
+      "end_time": 24.8,
+      "text": "北方帅哥|保件Bit3|大哥您继续",
+      "source": "ocr",
+      "confidence": 0.9038285811742147
+    },
+    {
+      "start_time": 25.3,
+      "end_time": 29.8,
+      "text": "徐祥Bit3|biibil|老上海|不要光听我讲呀|徐祥Bit3|bilibili|老上海|不要光听我讲呀|徐祥Bit3|bilibil|老上海|把杯子里的|JJT吃掉|北方帅哥|徐祥Bit3|bilibili|大哥说吃什么",
+      "source": "ocr",
+      "confidence": 0.9719423511449028
+    },
+    {
+      "start_time": 29.9,
+      "end_time": 32.8,
+      "text": "他说|新上海人|新上海人|把这点脚脚头喝掉|北方帅哥|徐祥Bit3|biliLil|你说普通话好吗",
+      "source": "ocr",
+      "confidence": 0.9568440467119217
+    },
+    {
+      "start_time": 32.9,
+      "end_time": 34.0,
+      "text": "新上海人|我说普通话了呀|R",
+      "source": "ocr",
+      "confidence": 0.703966590265433
+    },
+    {
+      "start_time": 34.3,
+      "end_time": 41.9,
+      "text": "北方帅哥|保祥Bit3|脚脚头我怎么够得到啊|北方帅哥|陈祥BIt3|bilibil|脚脚头我怎么够得到啊|北方帅哥|际件|BiBl|大哥|北方帅哥|你祥Bit3bilibili|今天说好了|北方帅哥|我来埋单|徐祥Bit3|bilibil|老上海|你来上海怎么好你埋单呢|徐祥Bit3|bilibill|老上海|你来上海怎么好你埋单呢|A|徐祥Bit3|bilibill|老上海|搞什么BYJ",
+      "source": "ocr",
+      "confidence": 0.9135268083934126
+    },
+    {
+      "start_time": 42.0,
+      "end_time": 44.2,
+      "text": "新上海人|大哥说你13点|新上海人|搞什么百叶结",
+      "source": "ocr",
+      "confidence": 0.9971356689929962
+    },
+    {
+      "start_time": 44.5,
+      "end_time": 45.4,
+      "text": "保祥Bit3|bilibili|北方帅哥|我不吃百叶结的",
+      "source": "ocr",
+      "confidence": 0.9301106482744217
+    },
+    {
+      "start_time": 45.6,
+      "end_time": 47.4,
+      "text": "北方帅哥|徐祥Bit3|bilibili|还有|北万帅哥|现在是下午四点啊",
+      "source": "ocr",
+      "confidence": 0.9202572902043661
+    },
+    {
+      "start_time": 47.5,
+      "end_time": 49.2,
+      "text": "新上海人|新上海人|13点是在M你呀",
+      "source": "ocr",
+      "confidence": 0.9958306948343912
+    },
+    {
+      "start_time": 49.6,
+      "end_time": 50.4,
+      "text": "徐祥Bit3|bilbil|北方帅哥|你为什么M我",
+      "source": "ocr",
+      "confidence": 0.8903603404760361
+    },
+    {
+      "start_time": 50.8,
+      "end_time": 58.0,
+      "text": "徐祥Bit3|bilibil|老上海|0|徐祥Bit3|三|老上海|你真的吃饱了是吗|徐祥Bit3Sm|老上海|瞎翻八翻什么东西啊|徐祥Bit3|bIDi|老上海|13点我口头语呀|徐祥Bit3|Di|老上海|对别人客气|徐祥Bit3|bibil|老上海|怎么骂人了啦|JA|徐祥Bit3|bilibl|老上海|不自量力妄自菲薄|新上海人",
+      "source": "ocr",
+      "confidence": 0.8396318089859239
+    },
+    {
+      "start_time": 58.2,
+      "end_time": 59.7,
+      "text": "新上海人|新上海人|大哥说再会",
+      "source": "ocr",
+      "confidence": 0.9969761967658997
+    },
+    {
+      "start_time": 59.8,
+      "end_time": 62.5,
+      "text": "北方帅哥|徐祥Bit3|bilibili|这次我听懂了|北方帅哥|徐祥Bit3|bilibili|他说|北方帅哥|依脑子瓦特了",
+      "source": "ocr",
+      "confidence": 0.9434429764747619
+    }
+  ],
+  "full_text": "徐祥Bit3Dn|老上海|兄弟啊 徐祥Bit3|bilibil|老上海|欢迎你来上海 北方帅哥|大哥|北方帅哥|听说你不会说普通话|北方帅哥|这不很标准吗 徐祥Bit3 iiblli|老上海|徐祥Bit3|biibili|老上海|我讲发讲发|徐祥Bit3|bilibil|老上海|上海话就要出来的 新上海人|大哥|新上海人|你放心讲 徐祥Bit3|biibili|老上海|我这个人呢|徐祥Bit3|bilibill|老上海|很实惠的 新上海人|大哥说他很务实|8|新上海人|大哥说他很务实 徐祥Bit3|ilibil|老上海|说话从来不喜欢|GLT|徐祥Bit3|bilibili|老上海|说话从来不喜欢|GLT|正|徐祥Bit3|bilibili|老上海|做事情从来不喜欢|YHH|徐祥Bit3|bilibili|老上海|故事情从来不喜欢|YHH 讲话不会惯浪头|上海人|新|新上海人|讲话不会掼浪头|新上海人|做事不会野花花 北方帅哥|徐祥BIt3 bilibili|你说普通话好吗|北方帅哥|你祥Bitillibi|你说普通话好吗 新上海人|我说普通话了呀 北方帅哥|保件Bit3|大哥您继续 徐祥Bit3|biibil|老上海|不要光听我讲呀|徐祥Bit3|bilibili|老上海|不要光听我讲呀|徐祥Bit3|bilibil|老上海|把杯子里的|JJT吃掉|北方帅哥|徐祥Bit3|bilibili|大哥说吃什么 他说|新上海人|新上海人|把这点脚脚头喝掉|北方帅哥|徐祥Bit3|biliLil|你说普通话好吗 新上海人|我说普通话了呀|R 北方帅哥|保祥Bit3|脚脚头我怎么够得到啊|北方帅哥|陈祥BIt3|bilibil|脚脚头我怎么够得到啊|北方帅哥|际件|BiBl|大哥|北方帅哥|你祥Bit3bilibili|今天说好了|北方帅哥|我来埋单|徐祥Bit3|bilibil|老上海|你来上海怎么好你埋单呢|徐祥Bit3|bilibill|老上海|你来上海怎么好你埋单呢|A|徐祥Bit3|bilibill|老上海|搞什么BYJ 新上海人|大哥说你13点|新上海人|搞什么百叶结 保祥Bit3|bilibili|北方帅哥|我不吃百叶结的 北方帅哥|徐祥Bit3|bilibili|还有|北万帅哥|现在是下午四点啊 新上海人|新上海人|13点是在M你呀 徐祥Bit3|bilbil|北方帅哥|你为什么M我 徐祥Bit3|bilibil|老上海|0|徐祥Bit3|三|老上海|你真的吃饱了是吗|徐祥Bit3Sm|老上海|瞎翻八翻什么东西啊|徐祥Bit3|bIDi|老上海|13点我口头语呀|徐祥Bit3|Di|老上海|对别人客气|徐祥Bit3|bibil|老上海|怎么骂人了啦|JA|徐祥Bit3|bilibl|老上海|不自量力妄自菲薄|新上海人 新上海人|新上海人|大哥说再会 北方帅哥|徐祥Bit3|bilibili|这次我听懂了|北方帅哥|徐祥Bit3|bilibili|他说|北方帅哥|依脑子瓦特了",
+  "duration": 63.166,
+  "metadata": {
+    "source": "ocr",
+    "video_path": "sample_data/20250626上海话视频480568590_nb2-1-16.mp4",
+    "sample_interval": 30,
+    "total_segments": 24
+  }
+}

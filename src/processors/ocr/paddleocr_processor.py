@@ -43,13 +43,30 @@ class PaddleOCRProcessor(OCRProcessor):
         height, width = image.shape[:2]
         return [OCRResult(text="模拟字幕文本", confidence=0.8, bbox=[0, height * 0.8, width, height])]
 
-    def recognize_text_from_frames(self, frames: List[VideoFrame]) -> List[OCRResult]:
+    def recognize_text_from_frames(self, frames: List[VideoFrame], sample_interval: int = 5) -> List[OCRResult]:
+        """
+        对帧序列以sample_interval为步长采样，检测OCR结果变化，输出区间内所有不同的OCR结果。
+        Args:
+            frames: 视频帧列表
+            sample_interval: 采样间隔（帧数），默认每5帧采样一次
+        Returns:
+            List[OCRResult]: 不同的OCR结果列表
+        """
         results = []
-        for frame in frames:
+        last_texts = None
+        for idx in range(0, len(frames), sample_interval):
+            frame = frames[idx]
             frame_results = self.recognize_text(frame.frame_data)
-            for result in frame_results:
-                result.timestamp = frame.timestamp
-            results.extend(frame_results)
+            # 只关注文本内容
+            texts = tuple(sorted([r.text for r in frame_results if r.text]))
+            if not texts:
+                continue
+            if texts != last_texts:
+                # 记录变化的OCR结果
+                for r in frame_results:
+                    r.timestamp = frame.timestamp
+                results.extend(frame_results)
+                last_texts = texts
         return results
 
     def recognize_text_from_file(self, image_path: str) -> List[OCRResult]:

@@ -1,0 +1,327 @@
+{
+  "segments": [
+    {
+      "start_time": 0.3,
+      "end_time": 2.2,
+      "text": "高考查分后的家长们belke|AMCKYMAUS|CY|MOUS|高考查分后的家长们belike||CAIOKY MAUS|CANCKYMAUS",
+      "source": "ocr",
+      "confidence": 0.7069147750735283
+    },
+    {
+      "start_time": 5.8,
+      "end_time": 6.3,
+      "text": "你这兴高采烈的去哪里啊",
+      "source": "ocr",
+      "confidence": 0.997168779373169
+    },
+    {
+      "start_time": 7.4,
+      "end_time": 8.2,
+      "text": "4|去办酒啊今天|X|中口|区|0",
+      "source": "ocr",
+      "confidence": 0.4260018765926361
+    },
+    {
+      "start_time": 8.7,
+      "end_time": 10.6,
+      "text": "原味彩||呦在哪里办啊？|山|★ス|X|X|X||公|X|X|日|脆|原味范|腰|nbruno|abruno||呦在哪里办啊？||ス|中|X",
+      "source": "ocr",
+      "confidence": 0.3892976626132925
+    },
+    {
+      "start_time": 10.9,
+      "end_time": 11.6,
+      "text": "原味琴肉|20|LS|胡景啊|区|A|卫",
+      "source": "ocr",
+      "confidence": 0.531337314418384
+    },
+    {
+      "start_time": 11.9,
+      "end_time": 12.5,
+      "text": "IGRAFWUSTORE|GRAFEWUTUDO.AEATTCL|X|包了两层楼|EX|V|国X区",
+      "source": "ocr",
+      "confidence": 0.5959538774830955
+    },
+    {
+      "start_time": 12.9,
+      "end_time": 14.4,
+      "text": "风|升学宴～|XX区|七8七|||IGRAFWUSTORBI|DRAFLUSIUO|噢~|中|兴|お|",
+      "source": "ocr",
+      "confidence": 0.3931868408734982
+    },
+    {
+      "start_time": 14.6,
+      "end_time": 16.1,
+      "text": "IGRAFWUSTOREI|原辣引路构|哎你屋里那个不是才高考完|2S||LL|H|风|+|X|区|Y|X|IGRAFWUSTORE|FOA|独|原球路|2s|哎你屋里那个不是才高考完|江|江|XL|E|X|兴|X|日|X|+|风|区|X|+|区|X",
+      "source": "ocr",
+      "confidence": 0.5046037071517535
+    },
+    {
+      "start_time": 16.2,
+      "end_time": 18.1,
+      "text": "IGRAFWUSTORB|原味酥路肉|uno|哎你屋里那个不是才高考完|2s||LL|LL|日|区|X|X|区|+|区|区|X|X|LL|风|IGRAFWUSTORBI|你们办不办啊？|#|X区X区|#女|区",
+      "source": "ocr",
+      "confidence": 0.5387927290911858
+    },
+    {
+      "start_time": 18.3,
+      "end_time": 21.6,
+      "text": "IGRAFWUSTORBI|#三福|你们在哪里办咧?|X|山|日|X区|L|七X|XX|X山|区|IGRAFWUSTORE|我们去那个.……|X|X||LL||+|风|X|L|我们去那个||ス|小四川酒家不？",
+      "source": "ocr",
+      "confidence": 0.42761508651353697
+    },
+    {
+      "start_time": 22.1,
+      "end_time": 24.2,
+      "text": "IGRAFWUSTORE|HA银|X区|LL||七||IGRAFWUSTORBE|兰|哼那是好你喜欢吃川菜撒|ス#|X|V|A公区|X区|+|IGRAFWUSTOREE|哼那是好你喜欢吃川菜撒|十|区|兴区|+|X区|+|",
+      "source": "ocr",
+      "confidence": 0.4391325625777245
+    },
+    {
+      "start_time": 24.8,
+      "end_time": 27.4,
+      "text": "原来科跑电脑||7206|rmbruno|七|区|X区||||145|srai|原味琴防肉|58|rmbruno|2|你屋里伢考多少分啊？|2s|中||YL||||N|原味型|原味酥肉馍|rmbruno|2|你屋里伢考多少分啊？|25|中||ス|||风#",
+      "source": "ocr",
+      "confidence": 0.37186564464826843
+    },
+    {
+      "start_time": 27.8,
+      "end_time": 28.8,
+      "text": "IGRAFWUSTORB|#王|S|全省前20|X区田区|公|日|X",
+      "source": "ocr",
+      "confidence": 0.4333302089944482
+    },
+    {
+      "start_time": 28.9,
+      "end_time": 30.1,
+      "text": "IGRAFWUSTORET|成绩屏蔽了看都看不到||#||IGRAFWUSTOREI|成绩屏蔽了看都看不到|8||文|*|公区|+|兴",
+      "source": "ocr",
+      "confidence": 0.3845363184809685
+    },
+    {
+      "start_time": 30.8,
+      "end_time": 31.5,
+      "text": "IGRAFWUSTOREI|福|XX区|女8|#|",
+      "source": "ocr",
+      "confidence": 0.4417227307955424
+    },
+    {
+      "start_time": 31.7,
+      "end_time": 33.7,
+      "text": "IGRAFWUSTOREIN||你怕是网不好吧|山|お#||LL||原味鲜脆肉腿|原味鲜肉|rmbruno|20|还看不到|中||||",
+      "source": "ocr",
+      "confidence": 0.3861586194899347
+    },
+    {
+      "start_time": 34.2,
+      "end_time": 35.4,
+      "text": "原味酿防肉|moruno|mbruno|WsSOoO|切~||#|XL|X|14455|r|原味科猪肉|runo|老屋里有网不好的？||X||",
+      "source": "ocr",
+      "confidence": 0.4523562139107121
+    },
+    {
+      "start_time": 35.6,
+      "end_time": 37.8,
+      "text": "老屋里有网不好的？|公田公区|||X|老屋里都是一千兆的网|日||||||IGRAFWUSTORBI|配八个光猫|日|X区|七七|",
+      "source": "ocr",
+      "confidence": 0.303693482445346
+    },
+    {
+      "start_time": 38.2,
+      "end_time": 41.2,
+      "text": "X|今*の今メ||人|配八个光猫|SRRNOTASNRR|IGRAFWUSTOREI|尼玛貓和老鼠里面的傑瑞來了|L|+|十|X|风|IGRAFWUSTORBIN|?|都要踮着腳走|L|X#|+|区|+|X|YL|X",
+      "source": "ocr",
+      "confidence": 0.5104335738966862
+    },
+    {
+      "start_time": 42.8,
+      "end_time": 44.7,
+      "text": "IGRAFWUSTORE|哈|哈哈哈哈哈哈哈哈哈哈哈·|汉田风馆|从|店|X出公员|手賀8#|EX|日|心里一点数都没得|BEORONEOANNN",
+      "source": "ocr",
+      "confidence": 0.48369422803322476
+    },
+    {
+      "start_time": 44.9,
+      "end_time": 45.3,
+      "text": "IGRAFWUSTORBI|那你蛮狠咧？|x七8|中田|X|文",
+      "source": "ocr",
+      "confidence": 0.5644212191303571
+    },
+    {
+      "start_time": 46.2,
+      "end_time": 46.9,
+      "text": "IGRAFWUSTOREI|老有不狠的？|如|文|#女|X",
+      "source": "ocr",
+      "confidence": 0.5050320203105608
+    },
+    {
+      "start_time": 47.5,
+      "end_time": 49.9,
+      "text": "IGRAPWUSTORBI|老银行卡里余额比你电话号码还长些|4|X|IGRAPWUSTORE|老银行卡里余额比你电话号码还长|中|X#|IGRAFWUSTOREI|0|老银行卡里余额比你电话号码还长|X区||女",
+      "source": "ocr",
+      "confidence": 0.4705721536385162
+    },
+    {
+      "start_time": 50.1,
+      "end_time": 52.4,
+      "text": "IGRAFWUSTORET|尼玛|メ女|XX||X|IGRAFWUSTORET|福道|换成现金可以把你屋里房子都压垮了|+|||公区|IGRAFWUSTORE|#三道|换成现金可以把你屋里房子都|山||H",
+      "source": "ocr",
+      "confidence": 0.4072510890270534
+    },
+    {
+      "start_time": 54.2,
+      "end_time": 54.6,
+      "text": "2|这不得了?|上",
+      "source": "ocr",
+      "confidence": 0.3644704073667526
+    },
+    {
+      "start_time": 55.6,
+      "end_time": 56.1,
+      "text": "原味西科脆间|unprvno|0OOSSTA1|那你屋里儿子报考哪个大学嘞|#女|X",
+      "source": "ocr",
+      "confidence": 0.6591195066769918
+    },
+    {
+      "start_time": 56.2,
+      "end_time": 56.9,
+      "text": "飘叔烤线|原味洗肉|unoruno|OOGSSA1|那你屋里儿子报考哪个大学嘞|X田|",
+      "source": "ocr",
+      "confidence": 0.5225083061626979
+    },
+    {
+      "start_time": 57.2,
+      "end_time": 57.6,
+      "text": "原味脆中调|原味#肉|rmbruno|20|S|那你屋里儿子报考哪个大学嘞|中|X|#ス|ヤ|日||兴区||",
+      "source": "ocr",
+      "confidence": 0.3931807681918144
+    },
+    {
+      "start_time": 59.1,
+      "end_time": 60.2,
+      "text": "花|噶大||北阳公司|保|家里蹲大学?|8|★★|",
+      "source": "ocr",
+      "confidence": 0.31511936088403064
+    },
+    {
+      "start_time": 60.6,
+      "end_time": 62.6,
+      "text": "大|加州大学！|曲||★8|||IGRAFWUSTORE|加州大学！||七||女",
+      "source": "ocr",
+      "confidence": 0.3195219360865079
+    },
+    {
+      "start_time": 63.0,
+      "end_time": 66.8,
+      "text": "IGRAFWUSTORSE|伯克利学院|中|||X公公|#|IGRAFWUSTOREI|#|心里一点数都没得|IGRAFWUSTOREI|#三道|AFWUSUDERF IAREARTTGU|金|哦这回事～|X区|||IGRAFWUSTORET|江三道|我到时候穿着|去接他|||风|区",
+      "source": "ocr",
+      "confidence": 0.46453153470960945
+    },
+    {
+      "start_time": 68.2,
+      "end_time": 69.6,
+      "text": "你屋里考到哪里去了||RSNSEEENN|你屋里考到哪里去了||SRSNAEEENSE",
+      "source": "ocr",
+      "confidence": 0.37725336849689484
+    },
+    {
+      "start_time": 70.2,
+      "end_time": 71.8,
+      "text": "你屋里考到哪里去了|今メのマス|美田路|#|沃修|口|SRSNOASRS|IGRAFWUSTOREI-|三三道|GRAFLWUOSINDIO.DIBASATTCUE|我屋里考的北大！",
+      "source": "ocr",
+      "confidence": 0.4230241504582492
+    },
+    {
+      "start_time": 72.2,
+      "end_time": 72.5,
+      "text": "IGRAFWUSTOREI|正吉区|EASEATSTGU|XX",
+      "source": "ocr",
+      "confidence": 0.48272575065493584
+    },
+    {
+      "start_time": 72.8,
+      "end_time": 74.4,
+      "text": "IGRAFWUSTORBI|#|OILAARTCU|哼哼|X|X门|十|XX|V||X|LARRIARTIST CLUS|白天不上大学？|LL|X|山|X",
+      "source": "ocr",
+      "confidence": 0.4226146105896024
+    },
+    {
+      "start_time": 74.5,
+      "end_time": 76.2,
+      "text": "撒？|E|公区|Y|那是尼玛夜校不?||X",
+      "source": "ocr",
+      "confidence": 0.3455782724278314
+    },
+    {
+      "start_time": 78.5,
+      "end_time": 80.1,
+      "text": "IGRAFWU STORET||你真是沒有文化周姐|XE|2|你真是沒有文化周姐|风|X日图||X",
+      "source": "ocr",
+      "confidence": 0.39823914095759394
+    },
+    {
+      "start_time": 80.5,
+      "end_time": 83.2,
+      "text": "a|北方民族大学听过没?|||北方民族大学听过没?|X|X|XL|→|X区|CRAFAWUR||CS|在银川||X|公汉",
+      "source": "ocr",
+      "confidence": 0.38388219037476706
+    },
+    {
+      "start_time": 85.7,
+      "end_time": 86.8,
+      "text": "IGRAFWUSTORE||X区公区|日#|IGRAFWUSTOREI|那你要小心点活结|区|台|文|田|X区|V",
+      "source": "ocr",
+      "confidence": 0.40308461089928943
+    },
+    {
+      "start_time": 87.1,
+      "end_time": 90.4,
+      "text": "IGRAFWUSTORBE|那你要小心点活结|X#|X|日X区|IGRAFWUSTORB|把孩子送去读|X区|区|公女|VL|IGRAFWUSTOREI|四年换个小苹果回来|||日|IGRAFWUSTORE|#|晒黑了|X区|",
+      "source": "ocr",
+      "confidence": 0.5426214379923684
+    },
+    {
+      "start_time": 90.7,
+      "end_time": 92.4,
+      "text": "|福|021|#HA|mcruno|COOSSM|到时候回来还给你取个英文名字||",
+      "source": "ocr",
+      "confidence": 0.34045234902037513
+    },
+    {
+      "start_time": 92.6,
+      "end_time": 93.4,
+      "text": "eoruno|Wasooo|到时候回来还给你取个英文名字|中|风|X|L|0",
+      "source": "ocr",
+      "confidence": 0.47282161097973585
+    },
+    {
+      "start_time": 93.5,
+      "end_time": 94.6,
+      "text": "|2|2|什么英文名啊?|X|chocolate豆|★田区||",
+      "source": "ocr",
+      "confidence": 0.4366092069281472
+    },
+    {
+      "start_time": 95.3,
+      "end_time": 96.0,
+      "text": "1|纯山|宾#|林国茗酒",
+      "source": "ocr",
+      "confidence": 0.3208369016647339
+    },
+    {
+      "start_time": 97.5,
+      "end_time": 98.0,
+      "text": "具|2|X|拜拜豆豆妈",
+      "source": "ocr",
+      "confidence": 0.38358831964433193
+    }
+  ],
+  "full_text": "高考查分后的家长们belke|AMCKYMAUS|CY|MOUS|高考查分后的家长们belike||CAIOKY MAUS|CANCKYMAUS 你这兴高采烈的去哪里啊 4|去办酒啊今天|X|中口|区|0 原味彩||呦在哪里办啊？|山|★ス|X|X|X||公|X|X|日|脆|原味范|腰|nbruno|abruno||呦在哪里办啊？||ス|中|X 原味琴肉|20|LS|胡景啊|区|A|卫 IGRAFWUSTORE|GRAFEWUTUDO.AEATTCL|X|包了两层楼|EX|V|国X区 风|升学宴～|XX区|七8七|||IGRAFWUSTORBI|DRAFLUSIUO|噢~|中|兴|お| IGRAFWUSTOREI|原辣引路构|哎你屋里那个不是才高考完|2S||LL|H|风|+|X|区|Y|X|IGRAFWUSTORE|FOA|独|原球路|2s|哎你屋里那个不是才高考完|江|江|XL|E|X|兴|X|日|X|+|风|区|X|+|区|X IGRAFWUSTORB|原味酥路肉|uno|哎你屋里那个不是才高考完|2s||LL|LL|日|区|X|X|区|+|区|区|X|X|LL|风|IGRAFWUSTORBI|你们办不办啊？|#|X区X区|#女|区 IGRAFWUSTORBI|#三福|你们在哪里办咧?|X|山|日|X区|L|七X|XX|X山|区|IGRAFWUSTORE|我们去那个.……|X|X||LL||+|风|X|L|我们去那个||ス|小四川酒家不？ IGRAFWUSTORE|HA银|X区|LL||七||IGRAFWUSTORBE|兰|哼那是好你喜欢吃川菜撒|ス#|X|V|A公区|X区|+|IGRAFWUSTOREE|哼那是好你喜欢吃川菜撒|十|区|兴区|+|X区|+| 原来科跑电脑||7206|rmbruno|七|区|X区||||145|srai|原味琴防肉|58|rmbruno|2|你屋里伢考多少分啊？|2s|中||YL||||N|原味型|原味酥肉馍|rmbruno|2|你屋里伢考多少分啊？|25|中||ス|||风# IGRAFWUSTORB|#王|S|全省前20|X区田区|公|日|X IGRAFWUSTORET|成绩屏蔽了看都看不到||#||IGRAFWUSTOREI|成绩屏蔽了看都看不到|8||文|*|公区|+|兴 IGRAFWUSTOREI|福|XX区|女8|#| IGRAFWUSTOREIN||你怕是网不好吧|山|お#||LL||原味鲜脆肉腿|原味鲜肉|rmbruno|20|还看不到|中|||| 原味酿防肉|moruno|mbruno|WsSOoO|切~||#|XL|X|14455|r|原味科猪肉|runo|老屋里有网不好的？||X|| 老屋里有网不好的？|公田公区|||X|老屋里都是一千兆的网|日||||||IGRAFWUSTORBI|配八个光猫|日|X区|七七| X|今*の今メ||人|配八个光猫|SRRNOTASNRR|IGRAFWUSTOREI|尼玛貓和老鼠里面的傑瑞來了|L|+|十|X|风|IGRAFWUSTORBIN|?|都要踮着腳走|L|X#|+|区|+|X|YL|X IGRAFWUSTORE|哈|哈哈哈哈哈哈哈哈哈哈哈·|汉田风馆|从|店|X出公员|手賀8#|EX|日|心里一点数都没得|BEORONEOANNN IGRAFWUSTORBI|那你蛮狠咧？|x七8|中田|X|文 IGRAFWUSTOREI|老有不狠的？|如|文|#女|X IGRAPWUSTORBI|老银行卡里余额比你电话号码还长些|4|X|IGRAPWUSTORE|老银行卡里余额比你电话号码还长|中|X#|IGRAFWUSTOREI|0|老银行卡里余额比你电话号码还长|X区||女 IGRAFWUSTORET|尼玛|メ女|XX||X|IGRAFWUSTORET|福道|换成现金可以把你屋里房子都压垮了|+|||公区|IGRAFWUSTORE|#三道|换成现金可以把你屋里房子都|山||H 2|这不得了?|上 原味西科脆间|unprvno|0OOSSTA1|那你屋里儿子报考哪个大学嘞|#女|X 飘叔烤线|原味洗肉|unoruno|OOGSSA1|那你屋里儿子报考哪个大学嘞|X田| 原味脆中调|原味#肉|rmbruno|20|S|那你屋里儿子报考哪个大学嘞|中|X|#ス|ヤ|日||兴区|| 花|噶大||北阳公司|保|家里蹲大学?|8|★★| 大|加州大学！|曲||★8|||IGRAFWUSTORE|加州大学！||七||女 IGRAFWUSTORSE|伯克利学院|中|||X公公|#|IGRAFWUSTOREI|#|心里一点数都没得|IGRAFWUSTOREI|#三道|AFWUSUDERF IAREARTTGU|金|哦这回事～|X区|||IGRAFWUSTORET|江三道|我到时候穿着|去接他|||风|区 你屋里考到哪里去了||RSNSEEENN|你屋里考到哪里去了||SRSNAEEENSE 你屋里考到哪里去了|今メのマス|美田路|#|沃修|口|SRSNOASRS|IGRAFWUSTOREI-|三三道|GRAFLWUOSINDIO.DIBASATTCUE|我屋里考的北大！ IGRAFWUSTOREI|正吉区|EASEATSTGU|XX IGRAFWUSTORBI|#|OILAARTCU|哼哼|X|X门|十|XX|V||X|LARRIARTIST CLUS|白天不上大学？|LL|X|山|X 撒？|E|公区|Y|那是尼玛夜校不?||X IGRAFWU STORET||你真是沒有文化周姐|XE|2|你真是沒有文化周姐|风|X日图||X a|北方民族大学听过没?|||北方民族大学听过没?|X|X|XL|→|X区|CRAFAWUR||CS|在银川||X|公汉 IGRAFWUSTORE||X区公区|日#|IGRAFWUSTOREI|那你要小心点活结|区|台|文|田|X区|V IGRAFWUSTORBE|那你要小心点活结|X#|X|日X区|IGRAFWUSTORB|把孩子送去读|X区|区|公女|VL|IGRAFWUSTOREI|四年换个小苹果回来|||日|IGRAFWUSTORE|#|晒黑了|X区| |福|021|#HA|mcruno|COOSSM|到时候回来还给你取个英文名字|| eoruno|Wasooo|到时候回来还给你取个英文名字|中|风|X|L|0 |2|2|什么英文名啊?|X|chocolate豆|★田区|| 1|纯山|宾#|林国茗酒 具|2|X|拜拜豆豆妈",
+  "duration": 102.6,
+  "metadata": {
+    "source": "ocr",
+    "video_path": "sample_data/阴阳怪气的周姐10 #搞笑 #高考查分 #真实 #反转 #武汉话.mp4",
+    "sample_interval": 30,
+    "total_segments": 45
+  }
+}
