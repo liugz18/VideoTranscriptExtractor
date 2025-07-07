@@ -74,14 +74,13 @@ class TranscriptionSegment:
 class TranscriptionResult:
     """完整的转录结果"""
     segments: List[TranscriptionSegment]  # 转录片段列表
-    full_text: str  # 完整文本
     duration: float  # 视频总时长
     metadata: Dict[str, Any]  # 元数据
     
     @property
     def transcript(self) -> str:
         """获取完整转录文本"""
-        return self.full_text
+        return " ".join(seg.text for seg in self.segments)
     
     def save_to_file(self, file_path: str, format: str = "json") -> None:
         """
@@ -109,7 +108,6 @@ class TranscriptionResult:
                     }
                     for seg in self.segments
                 ],
-                "full_text": self.full_text,
                 "duration": self.duration,
                 "metadata": self.metadata
             }
@@ -164,7 +162,6 @@ class TranscriptionResult:
             
             return cls(
                 segments=segments,
-                full_text=data["full_text"],
                 duration=data["duration"],
                 metadata=data["metadata"]
             )

@@ -15,7 +15,6 @@ def test_transcription_result_serialization():
 
     # 验证全等
     assert result1.segments == result2.segments
-    assert result1.full_text == result2.full_text
     assert result1.duration == result2.duration
     assert result1.metadata == result2.metadata
 

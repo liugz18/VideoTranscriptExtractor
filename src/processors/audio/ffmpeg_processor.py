@@ -11,7 +11,7 @@ import logging
 
 from ...core.audio_processor import AudioProcessor
 from ...core.types import AudioSegment, ProcessingConfig
-
+from pydub import AudioSegment as PydubAudioSegment
 
 class FFmpegAudioProcessor(AudioProcessor):
     """基于FFmpeg的音频处理器"""
@@ -69,20 +69,19 @@ class FFmpegAudioProcessor(AudioProcessor):
             'format': 'wav'
         }
     
-    def extract_audio_segments(self, time_segments: List[Tuple[float, float]]) -> List[AudioSegment]:
+    def extract_audio_segments(self, time_segments: List[Tuple[float, float]],audio_path: str) -> List[AudioSegment]:
         """提取指定时间区间的音频片段"""
         segments = []
-        
+        print(f"audio_path::{audio_path}") 
         for start_time, end_time in time_segments:
             # 创建临时文件
             temp_file = tempfile.NamedTemporaryFile(suffix='.wav', delete=False)
             temp_path = temp_file.name
-            temp_file.close()
-            
+            temp_file.close()          
             try:
                 # 使用FFmpeg提取音频片段
                 cmd = [
-                    'ffmpeg', '-i', 'input.wav',  # 需要先设置输入文件
+                    'ffmpeg', '-i', audio_path,  # 需要先设置输入文件
                     '-ss', str(start_time),
                     '-t', str(end_time - start_time),
                     '-acodec', 'pcm_s16le',
@@ -91,11 +90,16 @@ class FFmpegAudioProcessor(AudioProcessor):
                     '-y',
                     temp_path
                 ]
-                
+                result = subprocess.run(cmd, capture_output=True, text=True)
+                if result.returncode != 0:
+                    self.logger.error(f"FFmpeg提取音频失败: {result.stderr}")
+                    continue  # 跳过这个片段
                 # 这里需要实际的音频文件路径
                 # 暂时返回空的音频数据
-                audio_data = np.zeros(int((end_time - start_time) * 16000), dtype=np.int16)
-                
+               # audio_data = np.zeros(int((end_time - start_time) * 16000), dtype=np.int16)
+                # 用pydub读临时文件
+                pydub_seg = PydubAudioSegment.from_wav(temp_path)
+                audio_data = np.array(pydub_seg.get_array_of_samples(), dtype=np.int16)
                 segment = AudioSegment(
                     start_time=start_time,
                     end_time=end_time,

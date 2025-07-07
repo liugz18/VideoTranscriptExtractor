@@ -15,7 +15,8 @@ from src.core.types import ProcessingConfig, TranscriptionResult, TranscriptionS
 
 
 def main():
-    video_path = 'sample_data/阴阳怪气的周姐10 #搞笑 #高考查分 #真实 #反转 #武汉话.mp4'#'sample_data/20250626上海话视频480568590_nb2-1-16.mp4'#
+   # video_path ='sample_data/阴阳怪气的周姐10 #搞笑 #高考查分 #真实 #反转 #武汉话.mp4'
+    video_path = 'sample_data/20250626上海话视频480568590_nb2-1-16.mp4'#
     config = ProcessingConfig(ocr_languages=["ch"])
     
     video_processor = OpenCVVideoProcessor(config)
@@ -38,7 +39,7 @@ def main():
     print(f"检测到 {len(segments)} 个语音区间")
     
     # 4. 每个区间采样多帧做OCR，检测字幕变化
-    sample_interval = 30  # 每n帧采样一次
+    sample_interval = 20  # 每n帧采样一次
     all_segments = []
     
     for i, seg in enumerate(segments):
@@ -71,13 +72,10 @@ def main():
         # 获取视频总时长
         video_duration = video_processor.get_video_info()['duration']
         
-        # 合并所有文本
-        full_text = " ".join([seg.text for seg in all_segments])
         
         # 创建转录结果对象
         transcription_result = TranscriptionResult(
             segments=all_segments,
-            full_text=full_text,
             duration=video_duration,
             metadata={
                 "source": "ocr",
@@ -90,7 +88,7 @@ def main():
         # 保存到JSON文件
         import os
         video_name = os.path.splitext(os.path.basename(video_path))[0]
-        output_path = f"output/{video_name}_transcription.json"
+        output_path = f"output/[OCR]{video_name}_transcription.json"
         transcription_result.save_to_file(output_path, format="json")
         print(f"转录结果已保存到: {output_path}")
     else:
