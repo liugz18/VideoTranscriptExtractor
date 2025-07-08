@@ -104,6 +104,7 @@ class FFmpegAudioProcessor(AudioProcessor):
                     start_time=start_time,
                     end_time=end_time,
                     audio_data=audio_data,
+                    path=temp_path,
                     sample_rate=16000
                 )
                 segments.append(segment)
@@ -112,8 +113,9 @@ class FFmpegAudioProcessor(AudioProcessor):
                 self.logger.error(f"提取音频片段时发生错误: {str(e)}")
             finally:
                 # 清理临时文件
-                if os.path.exists(temp_path):
-                    os.unlink(temp_path)
+                # if os.path.exists(temp_path):
+                #     os.unlink(temp_path)
+                pass
         
         return segments
     

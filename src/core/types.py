@@ -39,6 +39,7 @@ class AudioSegment:
     end_time: float    # 结束时间（秒）
     audio_data: np.ndarray  # 音频数据
     sample_rate: int  # 采样率
+    path: Optional[str] = None  # 片段在原始序列中的位置，可为None
 
 
 @dataclass
@@ -68,6 +69,10 @@ class TranscriptionSegment:
     text: str  # 转录文本
     source: str  # 数据来源 ('ocr', 'asr', 'fusion')
     confidence: float  # 置信度
+
+    def __str__(self) -> str:
+        return (f"[{self.start_time:.2f}-{self.end_time:.2f}] "
+                f"{self.source}({self.confidence:.2f}): {self.text}")
 
 
 @dataclass

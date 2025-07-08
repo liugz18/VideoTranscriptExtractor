@@ -27,7 +27,7 @@ def main():
     vad_processor = SileroVADProcessor(config)
 
     asr_processor = ParaformerASRProcessor(config,
-            model_file="/mnt/sda/ASR/zhanghui/FunASR/inference_model/secondmodel/speech_seaco_paraformer_large_asr_nat-zh-cn-16k-common-vocab8404-jingzhou")
+            model_file="/mnt/sda/ASR/model/speech_paraformer-large-vad-punc_asr_nat-zh-cn-16k-common-vocab8404-pytorch")#"/mnt/sda/ASR/zhanghui/FunASR/inference_model/secondmodel/speech_seaco_paraformer_large_asr_nat-zh-cn-16k-common-vocab8404-jingzhou")
     # 1. 加载视频
     print("加载视频...")
     assert video_processor.load_video(video_path), "视频加载失败"

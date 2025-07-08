@@ -43,12 +43,13 @@ class PaddleOCRProcessor(OCRProcessor):
         height, width = image.shape[:2]
         return [OCRResult(text="模拟字幕文本", confidence=0.8, bbox=[0, height * 0.8, width, height])]
 
-    def recognize_text_from_frames(self, frames: List[VideoFrame], sample_interval: int = 5) -> List[OCRResult]:
+    def recognize_text_from_frames(self, frames: List[VideoFrame], sample_interval: int = 5, crop_ratio: float = 0.45) -> List[OCRResult]:
         """
         对帧序列以sample_interval为步长采样，检测OCR结果变化，输出区间内所有不同的OCR结果。
         Args:
             frames: 视频帧列表
             sample_interval: 采样间隔（帧数），默认每5帧采样一次
+            crop_ratio: 裁剪比例，默认0.5表示裁剪掉上1/2的图片
         Returns:
             List[OCRResult]: 不同的OCR结果列表
         """
@@ -56,7 +57,12 @@ class PaddleOCRProcessor(OCRProcessor):
         last_texts = None
         for idx in range(0, len(frames), sample_interval):
             frame = frames[idx]
-            frame_results = self.recognize_text(frame.frame_data)
+            
+            # 裁剪出下crop_ratio比例的图片
+            height, width = frame.frame_data.shape[:2]
+            cropped_frame = frame.frame_data[int((1-crop_ratio)*height):height, :]
+            
+            frame_results = self.recognize_text(cropped_frame)
             # 只关注文本内容
             texts = tuple(sorted([r.text for r in frame_results if r.text]))
             if not texts:
