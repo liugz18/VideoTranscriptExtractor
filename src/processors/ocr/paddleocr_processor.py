@@ -43,13 +43,14 @@ class PaddleOCRProcessor(OCRProcessor):
         height, width = image.shape[:2]
         return [OCRResult(text="模拟字幕文本", confidence=0.8, bbox=[0, height * 0.8, width, height])]
 
-    def recognize_text_from_frames(self, frames: List[VideoFrame], sample_interval: int = 5, crop_ratio: float = 0.45) -> List[OCRResult]:
+    def recognize_text_from_frames(self, frames: List[VideoFrame], sample_interval: int = 5, crop_ratio: float = 0.45, similarity_threshold: float = 0.6) -> List[OCRResult]:
         """
         对帧序列以sample_interval为步长采样，检测OCR结果变化，输出区间内所有不同的OCR结果。
         Args:
             frames: 视频帧列表
             sample_interval: 采样间隔（帧数），默认每5帧采样一次
-            crop_ratio: 裁剪比例，默认0.5表示裁剪掉上1/2的图片
+            crop_ratio: 裁剪比例，默认0.45表示裁剪掉上1/2的图片
+            similarity_threshold: 相似度阈值，默认0.6，超过此阈值认为字幕相同
         Returns:
             List[OCRResult]: 不同的OCR结果列表
         """
@@ -64,16 +65,67 @@ class PaddleOCRProcessor(OCRProcessor):
             
             frame_results = self.recognize_text(cropped_frame)
             # 只关注文本内容
-            texts = tuple(sorted([r.text for r in frame_results if r.text]))
+            texts = tuple([r.text for r in frame_results if r.text])
             if not texts:
                 continue
-            if texts != last_texts:
+            
+            # 使用模糊比对判断字幕是否变化
+            if last_texts is None or not self._is_similar_texts(texts, last_texts, similarity_threshold):
                 # 记录变化的OCR结果
                 for r in frame_results:
                     r.timestamp = frame.timestamp
                 results.extend(frame_results)
                 last_texts = texts
         return results
+
+    def _is_similar_texts(self, texts1: tuple, texts2: tuple, threshold: float) -> bool:
+        """
+        判断两组文本是否相似
+        Args:
+            texts1: 第一组文本
+            texts2: 第二组文本
+            threshold: 相似度阈值
+        Returns:
+            bool: 是否相似
+        """
+        if not texts1 or not texts2:
+            return False
+        
+        # 计算文本相似度（简单实现，可扩展为更复杂的算法）
+        text1 = " ".join(texts1)
+        text2 = " ".join(texts2)
+        
+        # 使用编辑距离计算相似度
+        distance = self._levenshtein_distance(text1, text2)
+        max_len = max(len(text1), len(text2))
+        if max_len == 0:
+            return True
+        
+        similarity = 1 - (distance / max_len)
+        # print(text1, text2, distance, similarity)
+        return similarity >= threshold
+
+    def _levenshtein_distance(self, s1: str, s2: str) -> int:
+        """
+        计算两个字符串的编辑距离
+        """
+        if len(s1) < len(s2):
+            return self._levenshtein_distance(s2, s1)
+        
+        if len(s2) == 0:
+            return len(s1)
+        
+        previous_row = list(range(len(s2) + 1))
+        for i, c1 in enumerate(s1):
+            current_row = [i + 1]
+            for j, c2 in enumerate(s2):
+                insertions = previous_row[j + 1] + 1
+                deletions = current_row[j] + 1
+                substitutions = previous_row[j] + (c1 != c2)
+                current_row.append(min(insertions, deletions, substitutions))
+            previous_row = current_row
+        
+        return previous_row[-1]
 
     def recognize_text_from_file(self, image_path: str) -> List[OCRResult]:
         try:

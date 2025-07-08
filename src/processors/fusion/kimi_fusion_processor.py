@@ -31,7 +31,6 @@ class KimiFusionProcessor:
             {"role": "user", "message_type": "audio", "content": audio_path},
         ]
         try:
-            # from IPython import embed; embed()
             wav, text = self.model.generate(messages, **self.sampling_params, output_type="text")
         except Exception as e:
             text = f"[Kimi融合失败: {e}]"
