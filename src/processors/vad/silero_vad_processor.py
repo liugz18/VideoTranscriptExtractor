@@ -49,7 +49,7 @@ class SileroVADProcessor(VADDetector):
             from silero_vad import read_audio, get_speech_timestamps
             wav = read_audio(audio_path)
             speech_timestamps = get_speech_timestamps(
-                wav, self.model, return_seconds=True
+                wav, self.model, return_seconds=True, min_silence_duration_ms=40
             )
             segments = [TimeSegment(start=ts['start'], end=ts['end']) for ts in speech_timestamps]
             return segments
