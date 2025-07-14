@@ -152,6 +152,13 @@ class VideoTranscriptionExtractor:
             TranscriptionResult: 转录结果，失败时返回None
         """
         try:
+            os.makedirs(output_dir, exist_ok=True)
+            video_name = os.path.splitext(os.path.basename(video_path))[0]
+            output_path = os.path.join(output_dir, f"{video_name}_transcription[OCR].json")
+            if os.path.isfile(output_path):
+                print(f"OCR 结果文件已存在，跳过处理: {output_path}")
+                return None
+
             print(f"开始处理视频OCR: {video_path}")
             
             # 1. 加载视频
@@ -221,9 +228,8 @@ class VideoTranscriptionExtractor:
                 )
                 
                 # 保存到文件
-                os.makedirs(output_dir, exist_ok=True)
-                video_name = os.path.splitext(os.path.basename(video_path))[0]
-                output_path = os.path.join(output_dir, f"{video_name}_transcription[OCR].json")
+                
+                
                 transcription_result.save_to_file(output_path, format="json")
                 print(f"OCR转录结果已保存到: {output_path}")
                 

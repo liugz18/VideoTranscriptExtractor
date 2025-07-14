@@ -15,6 +15,9 @@ class SileroVADProcessor(VADDetector):
         super().__init__(config)
         self.logger = logging.getLogger(__name__)
         self.model = None
+        self.min_silence_duration_ms = 10
+        self.time_resolution = 4
+
         self._init_model()
 
     def _init_model(self):
@@ -34,7 +37,7 @@ class SileroVADProcessor(VADDetector):
             if audio_data.dtype != np.float32:
                 audio_data = audio_data.astype(np.float32) / np.max(np.abs(audio_data))
             speech_timestamps = get_speech_timestamps(
-                audio_data, self.model, sampling_rate=sample_rate, return_seconds=True
+                audio_data, self.model, sampling_rate=sample_rate, return_seconds=True, min_silence_duration_ms=self.min_silence_duration_ms, time_resolution=self.time_resolution
             )
             segments = [TimeSegment(start=ts['start'], end=ts['end']) for ts in speech_timestamps]
             return segments
@@ -49,7 +52,7 @@ class SileroVADProcessor(VADDetector):
             from silero_vad import read_audio, get_speech_timestamps
             wav = read_audio(audio_path)
             speech_timestamps = get_speech_timestamps(
-                wav, self.model, return_seconds=True, min_silence_duration_ms=40
+                wav, self.model, return_seconds=True, min_silence_duration_ms=self.min_silence_duration_ms, time_resolution=self.time_resolution
             )
             segments = [TimeSegment(start=ts['start'], end=ts['end']) for ts in speech_timestamps]
             return segments
